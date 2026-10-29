@@ -1,0 +1,1039 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="AA77GtBzeu6zkbE3-h5VmGKqpU82pyjfdhuz7-7vnO0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SuperX creates modern websites, digital experiences and AI-powered solutions for businesses.">
+    <title>SuperX | Web Development & AI Solutions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #e0f7ff 0%,
+        #c8eaff 35%,
+        #d9e4ff 70%,
+        #f0ddff 100%
+    );
+    color: #172554;
+    line-height: 1.6;
+}
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+ 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(224, 247, 255, 0.92);
+    border-bottom: 1px solid rgba(71, 133, 190, 0.25);
+    backdrop-filter: blur(14px);
+}
+
+        nav {
+            min-height: 76px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.95);
+border-bottom: 1px solid #e5e7eb;
+        }
+
+        .logo {
+            font-size: 29px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #6d8cff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-links a:hover {
+            color: #91a8ff;
+        }
+ 
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #ffffff;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 22px rgba(79, 70, 229, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.35);
+}
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+ 
+.hero {
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 255, 255, 0.95),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(132, 206, 255, 0.8),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 70% 85%,
+            rgba(213, 174, 255, 0.65),
+            transparent 40%
+        ),
+        linear-gradient(135deg, #bdeeff, #d9e8ff, #f0dcff);
+}
+
+        .hero-content {
+            max-width: 780px;
+        }
+
+        .eyebrow {
+            color: #a6b6ff;
+            font-size: 13px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+ 
+h1 {
+    font-size: clamp(43px, 7vw, 76px);
+    line-height: 1.08;
+    margin: 22px 0;
+    letter-spacing: -2px;
+    font-weight: 900;
+    color: #172554;
+    text-shadow: 0 3px 18px rgba(255, 255, 255, 0.35);
+}
+
+        .gradient-text {
+            background: linear-gradient(90deg, #85a2ff, #c49aff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #b4bdd2;
+            font-size: 18px;
+            max-width: 620px;
+            margin-bottom: 30px;
+        }
+
+ 
+.secondary-button {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 13px 24px;
+    color: #1e40af;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background: #ffffff;
+    border-color: #3b82f6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+}
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+ 
+.card {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(95, 148, 207, 0.28);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(61, 104, 160, 0.12);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #69aaf5;
+    box-shadow: 0 18px 40px rgba(61, 104, 160, 0.2);
+}
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #687eff;
+        }
+
+        .card-icon {
+            font-size: 30px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            color: #aeb7cb;
+        }
+
+        .about {
+            background: #0c1020;
+        }
+
+        .about-content {
+            max-width: 760px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            margin: 14px 0;
+        }
+
+        .about-content p {
+            color: #b4bdd2;
+            margin-bottom: 18px;
+        }
+
+        .project-card {
+            min-height: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: linear-gradient(145deg, #19244b, #151525);
+        }
+
+        .project-label {
+            color: #a9b8ff;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .contact-box {
+            max-width: 760px;
+            margin: auto;
+            padding: 45px 25px;
+            text-align: center;
+            border: 1px solid #303b60;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #141d3a, #121020);
+        }
+
+        .contact-box h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            margin: 12px 0;
+        }
+
+        .contact-box p {
+            color: #b4bdd2;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            border-top: 1px solid #22283b;
+            padding: 25px 0;
+            color: #9ba6bc;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 760px) {
+            .nav-links {
+                gap: 12px;
+                font-size: 13px;
+            }
+
+            .nav-links .nav-contact {
+                display: none;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 500px;
+                padding: 70px 0;
+            }
+
+            .secondary-button {
+                margin: 12px 0 0;
+            }
+        }
+        .logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #38bdf8;
+    flex-shrink: 0;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* SuperX Chatbot Design */
+#superx-chat {
+    position: fixed;
+    right: 20px;
+ bottom: 90px;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+ 
+#chat-toggle {
+    background: #16a34a;
+    color: white;
+    border: none;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.2;
+    box-shadow: 0 4px 15px #0003;
+}
+
+#chat-box {
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    height: 420px;
+    max-height: 70vh;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px #0003;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+#chat-box[hidden] {
+    display: none;
+}
+
+.chat-header {
+    background: #16a34a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-close {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#chat-messages {
+    height: 265px;
+    overflow-y: auto;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.bot-message,
+.user-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.bot-message {
+    background: #f0fdf4;
+}
+
+.user-message {
+    background: #e0f2fe;
+    text-align: right;
+}
+
+#chat-form {
+    display: flex;
+    gap: 6px;
+    padding: 8px;
+}
+
+#chat-input {
+    width: 0;
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#chat-form button {
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#chat-whatsapp {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    color: #15803d;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.superx-trust-banner {
+  text-align: center;
+  padding: 35px 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #101827, #172b3f);
+  color: #ffffff;
+}
+
+.superx-trust-banner .trust-tag {
+  display: inline-block;
+  color: #86efac;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.superx-trust-banner h2 {
+  font-size: clamp(28px, 5vw, 46px);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.superx-trust-banner h2 span {
+  color: #4ade80;
+}
+
+.superx-trust-banner p {
+  max-width: 620px;
+  margin: 0 auto 24px;
+  color: #d1d5db;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.superx-trust-banner .trust-button {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: 9px;
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.superx-trust-banner .trust-button:hover {
+  background: #86efac;
+  transform: translateY(-2px);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+ <nav class="container">
+  <a href="#home" class="logo-circle">
+    <img src="./logo-circle.png" alt="SuperX Logo">
+  </a>
+
+ 
+<div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact" class="nav-contact">Contact</a>
+</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="eyebrow">Ideas into digital reality</div>
+
+                    <h1>
+                        We Build Digital
+                        <span class="gradient-text">Experiences.</span>
+                    </h1>
+
+                    <p>
+                        SuperX helps businesses grow with modern websites,
+                        thoughtful design and innovative digital solutions.
+                    </p>
+
+                    <a href="#contact" class="button">Start a Project ↗</a>
+                    <a href="#services" class="secondary-button">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">What We Do</div>
+                    <h2>Solutions for Your Business</h2>
+                    <p>Digital services designed to help your business establish its online presence.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon">🌐</div>
+                        <h3>Website Development</h3>
+                        <p>Modern, responsive websites designed for businesses, brands and professionals.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Clean layouts and intuitive user experiences that make websites easier to use.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">🤖</div>
+                        <h3>AI Solutions</h3>
+                        <p>Explore AI-powered tools and automation ideas for smarter digital workflows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="eyebrow">Why SuperX</div>
+                    <h2>Built With Purpose.<br><span class="gradient-text">Designed for Growth.</span></h2>
+                    <p>
+                        We believe every business deserves a strong digital presence.
+                        Our goal is to turn ideas into useful, attractive and reliable
+                        digital experiences.
+                    </p>
+                    <a href="#contact" class="button">Let's Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">Our Portfolio</div>
+                    <h2>Selected Projects</h2>
+                    <p>A space to showcase the websites and digital products we create.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card project-card">
+                        <div class="project-label">Website Development</div>
+                        <h3>Green Power</h3>
+                        <p>A footwear brand website project.</p>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-label">Coming Soon</div>
+                        <h3>Project Two</h3>
+                        <p>More digital work will be showcased here.</p>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-label">Coming Soon</div>
+                        <h3>Project Three</h3>
+                        <p>Building new ideas into digital experiences.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+<section id="pricing">
+    <div class="container">
+        <div class="section-heading">
+            <div class="eyebrow">Our Pricing</div>
+            <h2>Choose Your Package</h2>
+            <p>Flexible website solutions for businesses of different sizes.</p>
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <div class="eyebrow">Starter</div>
+                <h3>Basic Website</h3>
+                <h2>₹2,999</h2>
+ 
+<p>Ideal for individuals and small businesses.</p>
+<p>✓ Up to 3 website pages</p>
+<p>✓ Mobile-friendly responsive design</p>
+<p>✓ Home, About and Services sections</p>
+<p>✓ Contact section with WhatsApp button</p>
+<p>✓ Direct Call button</p>
+<p>✓ Basic on-page SEO setup</p>
+<p>✓ 1 round of revisions</p>
+<p>✓ Website launch assistance</p>
+                <br>
+                <a class="button"
+                   href="https://wa.me/917633853316?text=Hello%20SuperX%2C%20I%20am%20interested%20in%20the%20Basic%20Website%20package."
+                   target="_blank" rel="noopener noreferrer">
+                    Enquire Now
+                </a>
+                
+Enquire Now
+</a>
+
+<a class="button" href="tel:+917633853316">
+  📞 Call Now
+</a>
+
+</article>
+            </article>
+
+            <article class="card">
+                <div class="eyebrow">Popular</div>
+                <h3>Business Website</h3>
+                <h2>₹5,999</h2>
+                <p>For brands ready to build their online presence.</p>
+                <p>✓ Up to 5 pages</p>
+                <p>✓ Mobile-friendly design</p>
+                <p>✓ WhatsApp contact</p>
+                <br>
+                <a class="button"
+                   href="https://wa.me/917633853316?text=Hello%20SuperX%2C%20I%20am%20interested%20in%20the%20Business%20Website%20package."
+                   target="_blank" rel="noopener noreferrer">
+                    Enquire Now
+                </a>
+            </article>
+
+            <article class="card">
+                <div class="eyebrow">Advanced</div>
+                <h3>Premium Website</h3>
+                <h2>₹9,999+</h2>
+                <p>For businesses needing more custom features.</p>
+                <p>✓ Custom design</p>
+                <p>✓ Additional pages</p>
+                <p>✓ Advanced functionality</p>
+                <br>
+                <a class="button"
+                   href="https://wa.me/917633853316?text=Hello%20SuperX%2C%20I%20am%20interested%20in%20the%20Premium%20Website%20package."
+                   target="_blank" rel="noopener noreferrer">
+                    Enquire Now
+                </a>
+            </article>
+        </div>
+
+        <p class="muted" style="text-align:center; margin-top:24px;">
+            Indicative prices. Final quotation depends on project requirements.
+            Domain, hosting and third-party services may cost extra.
+        </p>
+    </div>
+</section>
+        <section id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="eyebrow">Have an Idea?</div>
+                    <h2>Let's Build Something <span class="gradient-text">Great.</span></h2>
+                    <p>Tell us about your project and let's discuss how we can help.</p>
+
+                    <!-- Replace this email with your real business email -->
+ 
+<a class="button"
+   href="https://wa.me/917633853316?text=Hello%20SuperX%2C%20I%20want%20to%20discuss%20a%20website%20project."
+   target="_blank"
+   rel="noopener noreferrer">
+    Contact Us on WhatsApp ↗
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            © <span id="year"></span> SuperX. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+    
+<!-- SuperX Free Chatbot -->
+<div id="superx-chat">
+  <button id="chat-toggle" type="button">💬 Chat with SuperX</button>
+
+  <div id="chat-box" hidden>
+    <div class="chat-header">
+      <strong>SuperX Support</strong>
+      <button id="chat-close" type="button">✕</button>
+    </div>
+
+    <div id="chat-messages">
+      <p class="bot-message">Namaste! 👋 Welcome to SuperX. Aapko kis service ki jaankari chahiye?</p>
+    </div>
+
+    <form id="chat-form">
+      <input id="chat-input" type="text" placeholder="Apna sawal likhein..." required>
+      <button type="submit">Send</button>
+    </form>
+
+    <a id="chat-whatsapp" href="#" target="_blank" rel="noopener">
+      WhatsApp par contact karein
+    </a>
+  </div>
+</div>
+
+<script>
+const chatToggle = document.getElementById("chat-toggle");
+const chatBox = document.getElementById("chat-box");
+const chatClose = document.getElementById("chat-close");
+const chatForm = document.getElementById("chat-form");
+const chatInput = document.getElementById("chat-input");
+const chatMessages = document.getElementById("chat-messages");
+const whatsapp = document.getElementById("chat-whatsapp");
+
+// Apna business WhatsApp number baad mein yahan add karna.
+// Country code 91 ke saath, + ya spaces ke bina.
+const whatsappNumber = "";
+
+whatsapp.href = whatsappNumber
+  ? `https://wa.me/${whatsappNumber}`
+  : "https://www.whatsapp.com/";
+
+chatToggle.addEventListener("click", () => {
+  chatBox.hidden = false;
+  chatToggle.hidden = true;
+});
+
+chatClose.addEventListener("click", () => {
+  chatBox.hidden = true;
+  chatToggle.hidden = false;
+});
+
+chatForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const message = chatInput.value.trim().toLowerCase();
+  if (!message) return;
+
+  const userMessage = document.createElement("p");
+  userMessage.className = "user-message";
+  userMessage.textContent = chatInput.value.trim();
+  chatMessages.appendChild(userMessage);
+
+  let reply = "Is jaankari ke liye kripya SuperX se WhatsApp par contact karein.";
+
+  if (message.includes("hello") || message.includes("hi") ||
+      message.includes("namaste")) {
+    reply = "Namaste! Welcome to SuperX. Aapko website banwani hai ya kisi service ki jaankari chahiye?";
+  } else if (message.includes("website") || message.includes("web development")) {
+    reply = "SuperX website development service deta hai. Apni requirements aur budget batayein, taaki hum aapki madad kar sakein.";
+  } else if (message.includes("price") || message.includes("pricing") ||
+             message.includes("kitna") || message.includes("charges")) {
+    reply = "Website ki keemat aapki requirements par depend karti hai. Exact price ke liye SuperX se WhatsApp par baat karein.";
+  } else if (message.includes("contact") || message.includes("whatsapp")) {
+    reply = "Neeche diye WhatsApp link par click karke SuperX se contact karein.";
+  }
+
+  const botMessage = document.createElement("p");
+  botMessage.className = "bot-message";
+  botMessage.textContent = reply;
+  chatMessages.appendChild(botMessage);
+
+  chatInput.value = "";
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+});
+</script>
+
+<style>
+  .sx-premium {
+    font-family: Arial, sans-serif;
+    color: #172554;
+    line-height: 1.7;
+  }
+  .sx-section {
+    padding: 64px 7%;
+    scroll-margin-top: 30px;
+  }
+  .sx-section:nth-child(even) {
+    background: #f3f7ff;
+  }
+  .sx-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 32px;
+  }
+  .sx-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .sx-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1150px;
+    margin: auto;
+  }
+  .sx-card {
+    background: white;
+    border: 1px solid #dce6f7;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 28px #142b5010;
+  }
+  .sx-card h3 {
+    margin-top: 0;
+    color: #1746a2;
+  }
+  .sx-card p {
+    color: #52617a;
+  }
+  .sx-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #102b66, #087bd9);
+    color: white;
+    border-radius: 24px;
+    padding: 40px 24px;
+    max-width: 1050px;
+    margin: 20px auto;
+  }
+  .sx-cta h2 {
+    font-size: clamp(26px, 4vw, 40px);
+    line-height: 1.2;
+  }
+  .sx-button {
+    display: inline-block;
+    background: white;
+    color: #1746a2;
+    padding: 12px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  .sx-faq {
+    max-width: 850px;
+    margin: 12px auto;
+    background: white;
+    border: 1px solid #dce6f7;
+    border-radius: 12px;
+    padding: 18px 22px;
+  }
+  .sx-faq summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    .sx-section { padding: 42px 5%; }
+    .sx-card { padding: 20px; }
+  }
+</style>
+
+<div class="sx-premium">
+
+  <section class="sx-section" id="sx-services">
+    <div class="sx-heading">
+      <h2>Digital Solutions Built Around Your Business</h2>
+      <p>Professional websites designed to help businesses establish a strong online presence.</p>
+    </div>
+    <div class="sx-grid">
+      <article class="sx-card">
+        <h3>Website Design</h3>
+        <p>Modern, professional website layouts tailored to your brand, audience and business goals.</p>
+      </article>
+      <article class="sx-card">
+        <h3>Website Development</h3>
+        <p>Functional business websites with clear navigation, useful features and responsive layouts.</p>
+      </article>
+      <article class="sx-card">
+        <h3>E-commerce Websites</h3>
+        <p>Online storefronts to showcase products, organise categories and help customers explore your offers.</p>
+      </article>
+      <article class="sx-card">
+        <h3>Mobile-Friendly Design</h3>
+        <p>Layouts designed to work across phones, tablets and desktop screens.</p>
+      </article>
+      <article class="sx-card">
+        <h3>Website Updates</h3>
+        <p>Content changes, design improvements and agreed maintenance for existing websites.</p>
+      </article>
+      <article class="sx-card">
+        <h3>Launch Assistance</h3>
+        <p>Help with website hosting setup, domain connection and publishing your website online.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="sx-section" id="sx-launch">
+    <div class="sx-heading">
+      <h2>From Idea to a Live Website</h2>
+      <p>We help take your website from the first concept to launch.</p>
+    </div>
+    <div class="sx-grid">
+      <article class="sx-card">
+        <h3>01. Plan</h3>
+        <p>We discuss your business, audience, required pages and project goals.</p>
+      </article>
+      <article class="sx-card">
+        <h3>02. Build</h3>
+        <p>We create the agreed website design, pages and functionality.</p>
+      </article>
+      <article class="sx-card">
+        <h3>03. Test</h3>
+        <p>We review navigation, page layout and mobile usability before launch.</p>
+      </article>
+      <article class="sx-card">
+        <h3>04. Launch</h3>
+        <p>We help configure supported hosting, connect your domain and publish the website online.</p>
+      </article>
+    </div>
+    <div class="sx-cta">
+      <h2>Your Website. Built and Ready to Go Online.</h2>
+      <p>SuperX can help with website development, hosting setup, domain connection and deployment.</p>
+      <p>Third-party hosting and domain fees are separate unless included in your written quote.</p>
+      <a class="sx-button" href="#contact">Discuss Your Project</a>
+    </div>
+  </section>
+
+  <section class="sx-section" id="sx-faq">
+    <div class="sx-heading">
+      <h2>Frequently Asked Questions</h2>
+      <p>Some useful details before starting your project.</p>
+    </div>
+
+    <details class="sx-faq">
+      <summary>Will you publish my website online?</summary>
+      <p>Yes. Website deployment and launch assistance can be included in the agreed project scope.</p>
+    </details>
+
+    <details class="sx-faq">
+      <summary>Can you help me connect a custom domain?</summary>
+      <p>Yes. We can help connect a domain you own. Domain registration and renewal fees are separate unless agreed otherwise.</p>
+    </details>
+
+    <details class="sx-faq">
+      <summary>Will my website work on mobile phones?</summary>
+      <p>We design and test responsive layouts for mobile, tablet and desktop screens.</p>
+    </details>
+
+    <details class="sx-faq">
+      <summary>How much does a website cost?</summary>
+      <p>Pricing depends on the required pages, features, design and integrations. Contact us for a project-specific quote.</p>
+    </details>
+
+    <details class="sx-faq">
+      <summary>Will hosting be free forever?</summary>
+      <p>Not necessarily. Some providers offer free plans, while others charge recurring fees. We clarify the hosting arrangement before the project begins.</p>
+    </details>
+  </section>
+
+</div>
+
+<!-- SuperX Trust Banner -->
+<div class="superx-trust-banner">
+  <span class="trust-tag">SUPERX • QUALITY YOU CAN TRUST</span>
+
+  <h2>
+    Premium Websites.<br>
+    <span>Affordable Prices.</span>
+  </h2>
+
+  <p>
+    Looking for excellent website development at a price
+    that fits your budget? SuperX delivers professional
+    design, reliable service, and personal attention
+    to every project.
+  </p>
+
+  <a href="#pricing" class="trust-button">
+    Explore Our Packages →
+  </a>
+</div>
+<!-- End SuperX Trust Banner -->
+ <a class="button" href="tel:+917633853316">
+  📞 Call Now
+</a>
+
+</body>
+</html>
